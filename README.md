@@ -21,3 +21,10 @@ The GetReadings response will return a standard Orientation vector with key `ori
 ```json
 	{"_type":"orientation_vector_degrees","ox":29,"oy":17,"oz":0,"theta":0}
 ```
+
+# DoCommand
+Due to gyro drift the orientation can become skewed over time. The model will internally start and keep track of angles even when GetOrientation/GetReadings are not called. To reset all internal measurements and calculations, call reset through DoCommand in the following way. All values will zero for a few seconds and then return new calculated angles.
+
+```json
+{"reset":true}
+```

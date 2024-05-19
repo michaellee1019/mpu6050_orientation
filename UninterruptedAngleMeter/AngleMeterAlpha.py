@@ -54,8 +54,8 @@ class AngleMeterAlpha:
 				return value
 
 
-		bus = smbus2.SMBus(1) 	# or bus = smbus.SMBus(0) for older version boards
-		DeviceAddress = 0x68   # MPU6050 device address
+		bus = None # or bus = smbus.SMBus(0) for older version boards
+		DeviceAddress = None  # MPU6050 device address
 
 		def measureAngles(self):
 				flag = 0
@@ -190,9 +190,9 @@ class AngleMeterAlpha:
 		def __init__(self, i2c_bus:int, address:int=0x68):
 			self.pitch=0
 			self.roll = 0
-			self.MPU_Init()
 			self.bus = smbus2.SMBus(i2c_bus)  # or bus = smbus.SMBus(0) for older version boards
 			self.DeviceAddress = address  # MPU6050 device address
+			self.MPU_Init()
 			self.compl_pitch = 0
 			self.compl_roll = 0
 			self.kalman_pitch = 0
