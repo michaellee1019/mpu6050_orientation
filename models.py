@@ -2,7 +2,7 @@ import sys
 
 sys.path.append("..")
 
-from mpu6050_orientation.UninterruptedAngleMeter.AngleMeterAlpha import AngleMeterAlpha
+from UninterruptedAngleMeter.AngleMeterAlpha import AngleMeterAlpha
 import viam_wrap
 from viam.components.movement_sensor import MovementSensor
 from viam.proto.app.robot import ComponentConfig
