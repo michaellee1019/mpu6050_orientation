@@ -1,6 +1,6 @@
 {
   "module_id": "michaellee1019:mpu6050_orientation",
-  "visibility": "private",
+  "visibility": "public",
   "url": "https://github.com/michaellee1019/mpu6050_orientation",
   "description": "A Viam module that provides an orientation vector using a Kalman filter",
   "models": [
