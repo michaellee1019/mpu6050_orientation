@@ -182,10 +182,9 @@ class AngleMeterAlpha:
 							time.sleep(0.005)
 
 						except Exception as exc:
-                                                    if(flag == 100):
-                                                        print(exc)
-                                                    flag +=1
-							
+							if(flag == 100):
+								print(exc)
+							flag +=1				
 
 		def __init__(self, i2c_bus:int, address:int=0x68):
 			self.pitch=0
