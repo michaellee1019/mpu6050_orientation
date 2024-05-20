@@ -14,7 +14,7 @@ from viam.utils import ValueTypes
 
 
 class MPU6050(MovementSensor):
-    MODEL = "michaellee1019:mpu6050-with-orientation:mpu6050-with-orientation"
+    MODEL = "michaellee1019:mpu6050_orientation:mpu6050_orientation"
     angleMeter = None
     i2c_address = None
     i2c_bus: int = None
