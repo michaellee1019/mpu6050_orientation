@@ -6,7 +6,9 @@
   "models": [
     {
 	    "api": "rdk:component:movement_sensor",
-      "model": "michaellee1019:mpu6050_orientation:mpu6050_orientation"
+      "model": "michaellee1019:mpu6050_orientation:mpu6050_orientation",
+      "markdown_link": "README.md#modelmichaellee1019mpu6050_orientationmpu6050_orientation",
+      "short_description": "A Viam module that provides orientation readings using a Kalman filter"
     }
   ],
   "build": {
