@@ -1,6 +1,7 @@
 # Module michaellee1019:mpu6050_orientation
+Is an extension of the Viam movement sensor model that provides an orientation vector using a Kalman filter.
 
-## Modelmichaellee1019:mpu6050_orientation:mpu6050_orientation
+## Model michaellee1019:mpu6050_orientation:mpu6050_orientation
 A Viam sensor that provides an orientation vector using a Kalman filter. The source code was derived from [Kalman-Filter-Python-for-mpu6050 by rocheparadox](https://github.com/rocheparadox/Kalman-Filter-Python-for-mpu6050) and wrapped in a viam module to provide movement sensor readings through Viam.
 
 ### Configuration
@@ -44,7 +45,7 @@ The GetReadings response will return a standard Orientation vector with key `ori
 	}
 ```
 
-# DoCommand
+### DoCommand
 Due to gyro drift the orientation can become skewed over time. The model will internally start and keep track of angles even when GetOrientation/GetReadings are not called. To reset all internal measurements and calculations, call reset through DoCommand in the following way. All values will zero for a few seconds and then return new calculated angles.
 
 ```json

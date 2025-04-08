@@ -3,9 +3,10 @@
   "visibility": "public",
   "url": "https://github.com/michaellee1019/mpu6050_orientation",
   "description": "A Viam module that provides an orientation vector using a Kalman filter",
+  "markdown_link":"README.md",
   "models": [
     {
-	    "api": "rdk:component:movement_sensor",
+      "api": "rdk:component:movement_sensor",
       "model": "michaellee1019:mpu6050_orientation:mpu6050_orientation",
       "markdown_link": "README.md#modelmichaellee1019mpu6050_orientationmpu6050_orientation",
       "short_description": "A Viam module that provides orientation readings using a Kalman filter"
